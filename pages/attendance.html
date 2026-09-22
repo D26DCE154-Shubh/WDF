@@ -1,0 +1,152 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../css/style.css">
+    <title>StudentHub | Attendance</title>
+</head>
+
+<body>
+    <header class="site-header">
+
+        <div class="nav-container">
+
+            <a href="index.html" class="brand">
+                <img src="../images/logo.png" alt="StudentHub Logo" class="brand-logo">
+                <span class="brand-name">StudentHub</span>
+            </a>
+
+            <nav class="main-navigation" aria-label="Main Navigation">
+
+                <ul class="nav-list">
+
+                    <li>
+                        <a href="index.html" class="nav-link">
+                            Home
+                        </a>
+                    </li>
+
+                    <li>
+                        <a href="about.html" class="nav-link">
+                            About
+                        </a>
+                    </li>
+
+                    <li>
+                        <a href="academics.html" class="nav-link">
+                            Academics
+                        </a>
+                    </li>
+
+                    <li>
+                        <a href="attendance.html" class="nav-link active">
+                            Attendance
+                        </a>
+                    </li>
+
+                    <li>
+                        <a href="communication.html" class="nav-link">
+                            Communication
+                        </a>
+                    </li>
+
+                    <li>
+                        <a href="contact.html" class="nav-link">
+                            Contact
+                        </a>
+                    </li>
+
+                </ul>
+
+            </nav>
+
+            <div class="nav-actions">
+
+                <button type="button" id="theme-toggle" class="theme-toggle" aria-label="Switch to dark mode"
+                    title="Switch to dark mode">
+                    🌙
+                </button>
+
+                <a href="login.html" class="nav-login">
+                    Login
+                </a>
+
+                <a href="register.html" class="nav-register">
+                    Register
+                </a>
+
+            </div>
+
+
+        </div>
+
+    </header>
+
+    <main>
+        <section>
+            <h2>Attendance Summary</h2>
+            <table>
+                <thead>
+                    <tr>
+                        <th>Student</th>
+                        <th>Subject</th>
+                        <th>Present</th>
+                        <th>Total</th>
+                        <th>Attendance %</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>Aman Verma</td>
+                        <td>Web Design</td>
+                        <td>18</td>
+                        <td>20</td>
+                        <td>90%</td>
+                    </tr>
+                    <tr>
+                        <td>Neha Singh</td>
+                        <td>Database Systems</td>
+                        <td>16</td>
+                        <td>20</td>
+                        <td>80%</td>
+                    </tr>
+                    <tr>
+                        <td>Rohit Kumar</td>
+                        <td>Computer Networks</td>
+                        <td>17</td>
+                        <td>20</td>
+                        <td>85%</td>
+                    </tr>
+                </tbody>
+            </table>
+        </section>
+
+        <section>
+            <h2>Filter Attendance</h2>
+            <form action="#">
+                <label for="class">Class</label>
+                <select id="class" name="class">
+                    <option value="sem2">Semester 2</option>
+                    <option value="sem3">Semester 3</option>
+                    <option value="sem4">Semester 4</option>
+                </select>
+
+                <label for="date">Date</label>
+                <input type="date" id="date" name="date">
+
+                <button type="submit">View Report</button>
+            </form>
+        </section>
+    </main>
+
+    <footer>
+        <p>Attendance can be reviewed at any time from StudentHub.</p>
+    </footer>
+
+    <script src="../js/script.js"></script>
+
+</body>
+
+</html>

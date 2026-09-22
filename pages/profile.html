@@ -1,0 +1,155 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../css/style.css">
+    <title>StudentHub | Profile</title>
+</head>
+
+<body>
+    <header class="site-header">
+
+        <div class="nav-container">
+
+            <a href="student_dash.html" class="brand">
+
+                <img src="../images/logo.png" alt="StudentHub Logo" class="brand-logo">
+
+                <span class="brand-name">StudentHub</span>
+
+            </a>
+
+
+            <nav class="main-navigation" aria-label="User Navigation">
+
+                <ul class="nav-list">
+
+                    <li>
+                        <a href="student_dash.html" class="nav-link">
+                            Dashboard
+                        </a>
+                    </li>
+
+                    <li>
+                        <a href="academics.html" class="nav-link">
+                            Academics
+                        </a>
+                    </li>
+
+                    <li>
+                        <a href="attendance.html" class="nav-link">
+                            Attendance
+                        </a>
+                    </li>
+
+                    <li>
+                        <a href="communication.html" class="nav-link">
+                            Communication
+                        </a>
+                    </li>
+
+                    <li>
+                        <a href="profile.html" class="nav-link active">
+                            Profile
+                        </a>
+                    </li>
+
+                </ul>
+
+            </nav>
+
+
+            <div class="nav-actions">
+
+                <button type="button" id="theme-toggle" class="theme-toggle" aria-label="Switch to dark mode"
+                    title="Switch to dark mode">
+                    🌙
+                </button>
+
+                <a href="index.html" class="nav-login">
+                    Logout
+                </a>
+
+            </div>
+
+
+        </div>
+
+    </header>
+
+    <main>
+        <section>
+            <h2>Profile Details</h2>
+            <p><strong>Name:</strong> Aditi Sharma</p>
+            <p><strong>Student ID:</strong> STU1024</p>
+            <p><strong>Department:</strong> Computer Science</p>
+            <p><strong>Email:</strong> aditi@studenthub.edu</p>
+        </section>
+
+        <section class="registration-section">
+            <h2>Update Profile</h2>
+
+            <form id="profile-form" action="#" novalidate>
+
+                <!-- Phone Number -->
+                <div class="form-group">
+                    <label for="phone">Phone Number</label>
+
+                    <input type="tel" id="phone" name="phone" placeholder="Enter 10-digit mobile number"
+                        inputmode="numeric" autocomplete="tel" maxlength="10" aria-describedby="phone-error" required>
+
+                    <small id="phone-error" class="error-message"></small>
+                </div>
+
+
+                <!-- Address -->
+                <div class="form-group">
+                    <label for="address">Address</label>
+
+                    <textarea id="address" name="address" rows="3" placeholder="Enter your address" minlength="5"
+                        maxlength="200" aria-describedby="address-error" required></textarea>
+
+                    <small id="address-error" class="error-message"></small>
+                </div>
+
+
+                <!-- Short Bio -->
+                <div class="form-group">
+                    <label for="bio">Short Bio</label>
+
+                    <textarea id="bio" name="bio" rows="3" placeholder="Write a short bio" minlength="10"
+                        maxlength="300" aria-describedby="bio-error" required></textarea>
+
+                    <small id="bio-error" class="error-message"></small>
+                </div>
+
+
+                <!-- Success Message -->
+                <div id="profile-success" class="success-message" role="status" aria-live="polite"></div>
+
+
+                <button type="submit">Save Changes</button>
+
+            </form>
+        </section>
+
+        <section>
+            <h2>Recent Activity</h2>
+            <ul>
+                <li>Viewed attendance report on 02 Aug 2026</li>
+                <li>Submitted Web Design assignment</li>
+                <li>Read notice about exam timetable</li>
+            </ul>
+        </section>
+    </main>
+
+    <footer>
+        <p>Profile information stays up to date through StudentHub.</p>
+    </footer>
+    <script src="../js/script.js"></script>
+
+</body>
+
+</html>

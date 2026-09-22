@@ -1,0 +1,143 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../css/style.css">
+    <title>StudentHub | Communication</title>
+</head>
+
+<body>
+    <header class="site-header">
+
+        <div class="nav-container">
+
+            <a href="index.html" class="brand">
+                <img src="../images/logo.png" alt="StudentHub Logo" class="brand-logo">
+                <span class="brand-name">StudentHub</span>
+            </a>
+
+            <nav class="main-navigation" aria-label="Main Navigation">
+
+                <ul class="nav-list">
+
+                    <li>
+                        <a href="index.html" class="nav-link">
+                            Home
+                        </a>
+                    </li>
+
+                    <li>
+                        <a href="about.html" class="nav-link">
+                            About
+                        </a>
+                    </li>
+
+                    <li>
+                        <a href="academics.html" class="nav-link">
+                            Academics
+                        </a>
+                    </li>
+
+                    <li>
+                        <a href="attendance.html" class="nav-link">
+                            Attendance
+                        </a>
+                    </li>
+
+                    <li>
+                        <a href="communication.html" class="nav-link active">
+                            Communication
+                        </a>
+                    </li>
+
+                    <li>
+                        <a href="contact.html" class="nav-link">
+                            Contact
+                        </a>
+                    </li>
+
+                </ul>
+
+            </nav>
+
+            <div class="nav-actions">
+
+                <button type="button" id="theme-toggle" class="theme-toggle" aria-label="Switch to dark mode"
+                    title="Switch to dark mode">
+                    🌙
+                </button>
+
+                <a href="login.html" class="nav-login">
+                    Login
+                </a>
+
+                <a href="register.html" class="nav-register">
+                    Register
+                </a>
+
+            </div>
+
+
+        </div>
+
+    </header>
+
+    <main>
+        <section>
+            <h2>Messages</h2>
+            <table>
+                <thead>
+                    <tr>
+                        <th>From</th>
+                        <th>Subject</th>
+                        <th>Status</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>Prof. Sharma</td>
+                        <td>Lab Session Reminder</td>
+                        <td>Unread</td>
+                    </tr>
+                    <tr>
+                        <td>Admin Office</td>
+                        <td>Library Access Update</td>
+                        <td>Read</td>
+                    </tr>
+                    <tr>
+                        <td>Class Representative</td>
+                        <td>Group Study Schedule</td>
+                        <td>Unread</td>
+                    </tr>
+                </tbody>
+            </table>
+        </section>
+
+        <section>
+            <h2>Compose Message</h2>
+            <form action="#">
+                <label for="recipient">To</label>
+                <input type="text" id="recipient" name="recipient">
+
+                <label for="subject">Subject</label>
+                <input type="text" id="subject" name="subject">
+
+                <label for="message">Message</label>
+                <textarea id="message" name="message" rows="5"></textarea>
+
+                <button type="submit">Send Message</button>
+            </form>
+        </section>
+    </main>
+
+    <footer>
+        <p>Stay connected with your college community.</p>
+    </footer>
+
+    <script src="../js/script.js"></script>
+
+</body>
+
+</html>
