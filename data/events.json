@@ -1,0 +1,107 @@
+[
+  {
+    "id": 1,
+    "title": "Tech Fest",
+    "category": "Technical",
+    "date": "2026-09-25",
+    "venue": "CHARUSAT Auditorium"
+  },
+  {
+    "id": 2,
+    "title": "Hackathon 2026",
+    "category": "Technical",
+    "date": "2026-09-28",
+    "venue": "Computer Lab"
+  },
+  {
+    "id": 3,
+    "title": "Sports Day",
+    "category": "Sports",
+    "date": "2026-10-02",
+    "venue": "University Ground"
+  },
+  {
+    "id": 4,
+    "title": "Cultural Fest",
+    "category": "Cultural",
+    "date": "2026-10-05",
+    "venue": "Main Auditorium"
+  },
+  {
+    "id": 5,
+    "title": "Coding Contest",
+    "category": "Technical",
+    "date": "2026-10-08",
+    "venue": "Programming Lab"
+  },
+  {
+    "id": 6,
+    "title": "Cricket Tournament",
+    "category": "Sports",
+    "date": "2026-10-10",
+    "venue": "Sports Ground"
+  },
+  {
+    "id": 7,
+    "title": "Music Night",
+    "category": "Cultural",
+    "date": "2026-10-12",
+    "venue": "Open Air Theatre"
+  },
+  {
+    "id": 8,
+    "title": "Web Development Workshop",
+    "category": "Workshop",
+    "date": "2026-10-15",
+    "venue": "Seminar Hall"
+  },
+  {
+    "id": 9,
+    "title": "Cyber Security Seminar",
+    "category": "Technical",
+    "date": "2026-10-18",
+    "venue": "IT Department"
+  },
+  {
+    "id": 10,
+    "title": "Basketball Tournament",
+    "category": "Sports",
+    "date": "2026-10-20",
+    "venue": "Basketball Court"
+  },
+  {
+    "id": 11,
+    "title": "Photography Competition",
+    "category": "Cultural",
+    "date": "2026-10-22",
+    "venue": "Student Activity Center"
+  },
+  {
+    "id": 12,
+    "title": "AI and Machine Learning Workshop",
+    "category": "Workshop",
+    "date": "2026-10-25",
+    "venue": "Seminar Hall"
+  },
+  {
+    "id": 13,
+    "title": "Quiz Competition",
+    "category": "Academic",
+    "date": "2026-10-28",
+    "venue": "Lecture Hall"
+  },
+  {
+    "id": 14,
+    "title": "Debate Competition",
+    "category": "Academic",
+    "date": "2026-10-30",
+    "venue": "Conference Hall"
+  },
+  {
+    "id": 15,
+    "title": "Career Guidance Seminar",
+    "category": "Academic",
+    "date": "2026-11-02",
+    "venue": "Main Auditorium"
+  }
+]

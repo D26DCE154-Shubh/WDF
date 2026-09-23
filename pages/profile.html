@@ -88,50 +88,19 @@
             <p><strong>Email:</strong> aditi@studenthub.edu</p>
         </section>
 
-        <section class="registration-section">
+        <section>
             <h2>Update Profile</h2>
+            <form action="#">
+                <label for="phone">Phone Number</label>
+                <input type="tel" id="phone" name="phone">
 
-            <form id="profile-form" action="#" novalidate>
+                <label for="address">Address</label>
+                <textarea id="address" name="address" rows="3"></textarea>
 
-                <!-- Phone Number -->
-                <div class="form-group">
-                    <label for="phone">Phone Number</label>
-
-                    <input type="tel" id="phone" name="phone" placeholder="Enter 10-digit mobile number"
-                        inputmode="numeric" autocomplete="tel" maxlength="10" aria-describedby="phone-error" required>
-
-                    <small id="phone-error" class="error-message"></small>
-                </div>
-
-
-                <!-- Address -->
-                <div class="form-group">
-                    <label for="address">Address</label>
-
-                    <textarea id="address" name="address" rows="3" placeholder="Enter your address" minlength="5"
-                        maxlength="200" aria-describedby="address-error" required></textarea>
-
-                    <small id="address-error" class="error-message"></small>
-                </div>
-
-
-                <!-- Short Bio -->
-                <div class="form-group">
-                    <label for="bio">Short Bio</label>
-
-                    <textarea id="bio" name="bio" rows="3" placeholder="Write a short bio" minlength="10"
-                        maxlength="300" aria-describedby="bio-error" required></textarea>
-
-                    <small id="bio-error" class="error-message"></small>
-                </div>
-
-
-                <!-- Success Message -->
-                <div id="profile-success" class="success-message" role="status" aria-live="polite"></div>
-
+                <label for="bio">Short Bio</label>
+                <textarea id="bio" name="bio" rows="3"></textarea>
 
                 <button type="submit">Save Changes</button>
-
             </form>
         </section>
 

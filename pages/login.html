@@ -85,47 +85,20 @@
     </header>
 
     <main>
-        <section class="registration-section">
+        <section>
             <h2>Sign In</h2>
-            <p>Login to access your StudentHub account.</p>
+            <form action="#">
+                <label for="username">Username or Email</label>
+                <input type="text" id="username" name="username">
 
-            <form id="login-form" action="#" novalidate>
+                <label for="password">Password</label>
+                <input type="password" id="password" name="password">
 
-                <!-- Username / Email -->
-                <div class="form-group">
-                    <label for="username">Username or Email</label>
-                    <input type="text" id="username" name="username" placeholder="Enter username or email"
-                        autocomplete="username" aria-describedby="username-error" required>
-                    <small id="username-error" class="error-message"></small>
-                </div>
-
-                <!-- Password -->
-                <div class="form-group">
-                    <label for="login-password">Password</label>
-                    <input type="password" id="login-password" name="password" placeholder="Enter your password"
-                        autocomplete="current-password" minlength="6" aria-describedby="login-password-error" required>
-                    <small id="login-password-error" class="error-message"></small>
-                </div>
-
-                <!-- Remember Me -->
-                <div class="terms-group">
-                    <label>
-                        <input type="checkbox" id="remember" name="remember">
-                        Remember me
-                    </label>
-                </div>
-
-                <!-- Success Message -->
-                <div id="login-success" class="success-message" role="status" aria-live="polite"></div>
+                <label><input type="checkbox" name="remember"> Remember me</label>
 
                 <button type="submit">Login</button>
-
             </form>
-
-            <p>
-                New here?
-                <a href="register.html">Create an account</a>.
-            </p>
+            <p>New here? <a href="register.html">Create an account</a>.</p>
         </section>
     </main>
 
