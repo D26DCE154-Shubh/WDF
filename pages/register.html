@@ -4,56 +4,74 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
     <link rel="stylesheet" href="../css/style.css">
+
     <title>StudentHub | Register</title>
 </head>
 
 <body>
+
+    <!-- ================= HEADER ================= -->
+
     <header class="site-header">
 
         <div class="nav-container">
 
             <a href="index.html" class="brand">
-                <img src="../images/logo.png" alt="StudentHub Logo" class="brand-logo">
-                <span class="brand-name">StudentHub</span>
+                <img src="../images/logo.png"
+                     alt="StudentHub Logo"
+                     class="brand-logo">
+
+                <span class="brand-name">
+                    StudentHub
+                </span>
             </a>
 
-            <nav class="main-navigation" aria-label="Main Navigation">
+
+            <nav class="main-navigation"
+                 aria-label="Main Navigation">
 
                 <ul class="nav-list">
 
                     <li>
-                        <a href="index.html" class="nav-link">
+                        <a href="index.html"
+                           class="nav-link">
                             Home
                         </a>
                     </li>
 
                     <li>
-                        <a href="about.html" class="nav-link">
+                        <a href="about.html"
+                           class="nav-link">
                             About
                         </a>
                     </li>
 
                     <li>
-                        <a href="academics.html" class="nav-link">
+                        <a href="academics.html"
+                           class="nav-link">
                             Academics
                         </a>
                     </li>
 
                     <li>
-                        <a href="attendance.html" class="nav-link">
+                        <a href="attendance.html"
+                           class="nav-link">
                             Attendance
                         </a>
                     </li>
 
                     <li>
-                        <a href="communication.html" class="nav-link">
+                        <a href="communication.html"
+                           class="nav-link">
                             Communication
                         </a>
                     </li>
 
                     <li>
-                        <a href="contact.html" class="nav-link">
+                        <a href="contact.html"
+                           class="nav-link">
                             Contact
                         </a>
                     </li>
@@ -62,66 +80,208 @@
 
             </nav>
 
+
             <div class="nav-actions">
 
-                <button type="button" id="theme-toggle" class="theme-toggle" aria-label="Switch to dark mode"
-                    title="Switch to dark mode">
+                <button type="button"
+                        id="theme-toggle"
+                        class="theme-toggle"
+                        aria-label="Switch to dark mode"
+                        title="Switch to dark mode">
+
                     🌙
+
                 </button>
 
-                <a href="login.html" class="nav-login">
+
+                <a href="login.html"
+                   class="nav-login">
+
                     Login
+
                 </a>
 
-                <a href="register.html" class="nav-register">
+
+                <a href="register.html"
+                   class="nav-register">
+
                     Register
+
                 </a>
 
             </div>
-
 
         </div>
 
     </header>
 
+
+    <!-- ================= MAIN ================= -->
+
     <main>
+
         <section>
-            <h2>Registration Form</h2>
-            <form action="#">
-                <label for="full-name">Full Name</label>
-                <input type="text" id="full-name" name="full-name">
 
-                <label for="email">Email Address</label>
-                <input type="email" id="email" name="email">
+            <h2>
+                Registration Form
+            </h2>
 
-                <label for="role">Role</label>
-                <select id="role" name="role">
-                    <option value="student">Student</option>
-                    <option value="teacher">Teacher</option>
-                    <option value="admin">Administrator</option>
+
+            <!--
+                PRACTICAL 7
+
+                Form data will be sent to register.php
+                using POST method.
+            -->
+
+            <form action="register.php"
+                  method="POST">
+
+                <!-- FULL NAME -->
+
+                <label for="full-name">
+                    Full Name
+                </label>
+
+                <input type="text"
+                       id="full-name"
+                       name="full-name"
+                       placeholder="Enter your full name"
+                       required>
+
+
+                <!-- EMAIL -->
+
+                <label for="email">
+                    Email Address
+                </label>
+
+                <input type="email"
+                       id="email"
+                       name="email"
+                       placeholder="Enter your email"
+                       required>
+
+
+                <!-- ROLE -->
+
+                <label for="role">
+                    Role
+                </label>
+
+                <select id="role"
+                        name="role"
+                        required>
+
+                    <option value="student">
+                        Student
+                    </option>
+
+                    <option value="teacher">
+                        Teacher
+                    </option>
+
+                    <option value="admin">
+                        Administrator
+                    </option>
+
                 </select>
 
-                <label for="department">Department</label>
-                <input type="text" id="department" name="department">
 
-                <label for="password">Password</label>
-                <input type="password" id="password" name="password">
+                <!-- DEPARTMENT -->
 
-                <label for="confirm-password">Confirm Password</label>
-                <input type="password" id="confirm-password" name="confirm-password">
+                <label for="department">
+                    Department
+                </label>
 
-                <label><input type="checkbox" name="agree"> I agree to the terms and conditions.</label>
+                <input type="text"
+                       id="department"
+                       name="department"
+                       placeholder="Enter your department"
+                       required>
 
-                <button type="submit">Register</button>
+
+                <!-- PASSWORD -->
+
+                <label for="password">
+                    Password
+                </label>
+
+                <input type="password"
+                       id="password"
+                       name="password"
+                       placeholder="Enter password"
+                       minlength="8"
+                       required>
+
+
+                <!-- CONFIRM PASSWORD -->
+
+                <label for="confirm-password">
+                    Confirm Password
+                </label>
+
+                <input type="password"
+                       id="confirm-password"
+                       name="confirm-password"
+                       placeholder="Confirm password"
+                       minlength="8"
+                       required>
+
+
+                <!-- TERMS -->
+
+                <label>
+
+                    <input type="checkbox"
+                           name="agree"
+                           value="yes"
+                           required>
+
+                    I agree to the terms and conditions.
+
+                </label>
+
+
+                <!-- SUBMIT -->
+
+                <button type="submit">
+                    Register
+                </button>
+
             </form>
-            <p>Already registered? <a href="login.html">Sign in</a>.</p>
+
+
+            <p>
+
+                Already registered?
+
+                <a href="login.html">
+                    Sign in
+                </a>.
+
+            </p>
+
         </section>
+
     </main>
 
+
+    <!-- ================= FOOTER ================= -->
+
     <footer>
-        <p>Welcome to StudentHub.</p>
+
+        <p>
+            Welcome to StudentHub.
+        </p>
+
     </footer>
+
+
+    <!-- JAVASCRIPT -->
+
     <script src="../js/script.js"></script>
+
 </body>
 
 </html>
